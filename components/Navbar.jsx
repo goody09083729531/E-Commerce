@@ -11,9 +11,9 @@ const Navbar = () => {
     <header>
       <a className="logo">Nsikak</a>
       <nav className="navbar">
-        <a className="active">Home</a>
-        <a>Shop</a>
-        <a>Contact</a>
+        <Link href="/" className="active link">Home</Link>
+        <Link href="/product/shop" className="link">Shop</Link>
+        <Link href="" className="link">Contact</Link>
       </nav>
       <div className="icons">
         <i className="fas fa-bars" id="menu-bars"></i>

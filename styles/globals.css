@@ -210,7 +210,7 @@ ul {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
-  header .navbar a{
+  header .navbar .link{
       display: block;
       padding: 1.5rem;
       margin: 1rem;
@@ -315,7 +315,48 @@ header .logo{
   font-weight: bolder;
 }
 
-header .navbar a{
+.container-fluid {
+  width: 100%;
+  height: auto;
+  padding: 0px 0px 80px 0px;
+  margin-top: 70px;
+}
+
+.containers {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+}
+
+.containers .search {
+  display: flex;
+  padding: 30px 0px;
+  justify-content: space-between;
+}
+
+.containers .search h1 {
+  letter-spacing: 3px;
+  display: inline-block;
+  border-bottom: 2px solid var(--green);
+  padding-bottom: 10px;
+}
+
+.containers .search input {
+  width: 60%;
+  border: 1px solid black;
+  background: transparent;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding: 15px 16px;
+}
+
+.containers .search input::placeholder{
+  color: var(--black);
+  font-weight: 500;
+}
+
+header .navbar .link{
   font-size: 1.7rem;
   border-radius: .5rem;
   padding: .5rem 1.5rem;
@@ -323,8 +364,8 @@ header .navbar a{
   cursor: pointer;
 }
 
-header .navbar a.active,
-header .navbar a:hover{
+header .navbar .link.active,
+header .navbar .link:hover{
   color: #fff;
   background: var(--green);
 }
