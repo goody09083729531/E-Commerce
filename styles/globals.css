@@ -237,7 +237,7 @@ width: 100%;
 
 }
 .layout{
-  padding: 10px;
+  padding: 10px 0 0 0;
 }
 
 .navbar-container{
@@ -412,6 +412,7 @@ header .icons i:hover{
   justify-content: center;
   gap: 15px;
   margin-top: 20px;
+  margin-bottom: 30px;
   width: 100%;
 }
 .product-card{
@@ -756,17 +757,16 @@ padding: 20px 10px;
 
 .product-detail-container{
   display: flex;
- gap: 40px;
- margin: 40px;
- margin-top: 60px;
- color: #324d67;
+  gap: 40px;
+  margin: 40px;
+  margin-top: 60px;
+  color: #324d67;
 
 }
 
 .product-detail-image{
   border-radius: 15px;
-   background-color: #ebebeb;
-
+  background-color: #ebebeb;
   width: 400px;
   height: 400px;
   cursor: pointer;
