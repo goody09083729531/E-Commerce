@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { client, urlFor } from '../../lib/client';
 import { Product } from '../../components';
 import { useStateContext } from '../../context/StateContext';
+import Image from 'next/image';
 
 const ProductDetails = ({ product, products }) => {
   const { image, name, details, price } = product;
@@ -16,14 +17,19 @@ const ProductDetails = ({ product, products }) => {
       <div className="product-detail-container">
         <div>
           <div className="image-container">
-            <img src={urlFor(image && image[index])} className="product-detail-image" />
+            <Image src={urlFor(image && image[index]).url()} width={400} height={400} className="product-detail-image" quality={100} layout="intrinsic" alt="" />
           </div>
           <div className="small-images-container">
             {image?.map((item, i) => (
-              <img 
-                src={urlFor(item)}
+              <Image
+                width={70}
+                height={70}
+                src={urlFor(item).url()}
                 className={i === index ? 'small-image selected-image' : 'small-image'}
                 onMouseEnter={() => setIndex(i)}
+                quality={100}
+                layout="intrinsic"
+                alt=""
               />
             ))}
           </div>

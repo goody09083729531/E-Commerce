@@ -699,10 +699,10 @@ padding: 20px 10px;
 }
 
 .product .cart-product-image{
-  width:180px ;
+  width:  180px ;
   height: 150px;
-    border-radius: 15px;
- background-color: #ebebeb;
+  border-radius: 15px;
+  background-color: #ebebeb;
 }
 .item-desc .flex{
   display: flex;
@@ -767,8 +767,6 @@ padding: 20px 10px;
 .product-detail-image{
   border-radius: 15px;
   background-color: #ebebeb;
-  width: 400px;
-  height: 400px;
   cursor: pointer;
   transition: .3s ease-in-out;
 }
@@ -784,8 +782,6 @@ padding: 20px 10px;
 .small-image{
   border-radius: 8px;
   background-color: #ebebeb;
-  width: 70px;
-  height: 70px;
   cursor: pointer;
 }
 

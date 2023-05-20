@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { urlFor } from '../lib/client';
+import Image from 'next/image';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -27,7 +28,7 @@ const HeroBanner = ({ heroBanner }) => {
                 </Link>
               </div>
               <div className="image">
-                <img src={urlFor(heroBanner.image1)} alt="iphone" />
+                <Image src={urlFor(heroBanner.image1).url()} alt="airpods" width={800} height={1000} quality={100} layout="intrinsic" />
               </div>
             </div>
           </SwiperSlide>
@@ -43,7 +44,7 @@ const HeroBanner = ({ heroBanner }) => {
                 </Link>
               </div>
               <div className="image">
-                <img src={urlFor(heroBanner.image2)} alt="headphone" />
+                <Image src={urlFor(heroBanner.image2).url()} alt="headphone" width={555} height={555} quality={100} layout="intrinsic" />
               </div>
             </div>
           </SwiperSlide>
@@ -59,7 +60,7 @@ const HeroBanner = ({ heroBanner }) => {
                 </Link>
               </div>
               <div className="image">
-                <img src={urlFor(heroBanner.image3)} alt="watches" />
+                <Image src={urlFor(heroBanner.image3).url()} alt="watches" width={600} height={600} quality={100} layout="intrinsic" />
               </div>
             </div>
           </SwiperSlide>

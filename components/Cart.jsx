@@ -4,6 +4,7 @@ import toast from 'react-hot-toast';
 import { AiOutlineLeft, AiOutlineShopping } from 'react-icons/ai';
 import { BsFillTrash3Fill } from 'react-icons/bs';
 import { useStateContext } from '../context/StateContext';
+import Image from 'next/image';
 
 import { urlFor } from '../lib/client';
 
@@ -41,7 +42,7 @@ const Cart = () => {
         <div className="product-container">
           {cartItems.length >= 1 && cartItems.map((item) => (
             <div className="product" key={item._id}>
-              <img src={urlFor(item?.image[0])} className="cart-product-image" />
+              <Image src={urlFor(item?.image[0]).url()} className="cart-product-image" width={180} height={150} quality={100} layout="intrinsic" alt="" />
               <div className="item-desc">
                 <div className="flex top">
                   <h5>{item.name}</h5>
