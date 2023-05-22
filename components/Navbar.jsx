@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import Link from 'next/link';
 
 import { Cart } from './';
@@ -9,6 +9,19 @@ const Navbar = () => {
 
   const myElementRef = useRef(null);
   const timesRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      timesRef.current.classList.remove('fa-times');
+      myElementRef.current.classList.remove('active');
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const handleClick = () => {
     myElementRef.current.classList.toggle('active');
@@ -21,6 +34,8 @@ const Navbar = () => {
       <nav className="navbar" ref={myElementRef}>
         <Link href="/" className="active link">Home</Link>
         <Link href="/product/shop" className="link">Shop</Link>
+        <Link href="/product/shop" className="link">About</Link>
+        <Link href="/product/shop" className="link">Blog</Link>
         <Link href="" className="link">Contact</Link>
       </nav>
       <div className="icons">
