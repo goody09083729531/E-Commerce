@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Link from 'next/link';
 import { urlFor } from '../lib/client';
 import Image from 'next/image';
@@ -8,6 +8,20 @@ import SwiperCore, { Autoplay } from 'swiper';
 import 'swiper/css';
 
 const HeroBanner = ({ heroBanner }) => {
+  const swiperRef = useRef(null);
+
+  const handleMouseEnter = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.autoplay.stop();
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.autoplay.start();
+    }
+  };
+
   SwiperCore.use([Autoplay])
 
   return (
@@ -15,6 +29,7 @@ const HeroBanner = ({ heroBanner }) => {
       <div className="home-slider">
         <div className="wrapper">
           <Swiper
+            ref={swiperRef}
             spaceBetween={70}
             slidesPerView={1}
             loop={true}
@@ -30,7 +45,7 @@ const HeroBanner = ({ heroBanner }) => {
                 <h3>{heroBanner.midText1}</h3>
                 <p>{heroBanner.desc1}</p>
                 <Link href={`/product/${heroBanner.product}`}>
-                  <button className="btn" type="button">{heroBanner.buttonText}</button>
+                  <button className="btn" type="button" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>{heroBanner.buttonText}</button>
                 </Link>
               </div>
               <div className="image">
@@ -46,7 +61,7 @@ const HeroBanner = ({ heroBanner }) => {
                 <h3>{heroBanner.midText2}</h3>
                 <p>{heroBanner.desc2}</p>
                 <Link href={`/product/${heroBanner.product}`}>
-                  <button className="btn" type="button">{heroBanner.buttonText}</button>
+                  <button className="btn" type="button" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>{heroBanner.buttonText}</button>
                 </Link>
               </div>
               <div className="image">
@@ -62,7 +77,7 @@ const HeroBanner = ({ heroBanner }) => {
                 <h3>{heroBanner.midText3}</h3>
                 <p>{heroBanner.desc3}</p>
                 <Link href={`/product/${heroBanner.product}`}>
-                  <button className="btn" type="button">{heroBanner.buttonText}</button>
+                  <button className="btn" type="button" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>{heroBanner.buttonText}</button>
                 </Link>
               </div>
               <div className="image">
