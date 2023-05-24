@@ -436,7 +436,7 @@ header .logo{
 header .navbar .link{
   font-size: 1.7rem;
   border-radius: .5rem;
-  padding: .5rem 1.5rem;
+  padding: 1rem 1.5rem;
   color: var(--light-color);
   cursor: pointer;
 }
