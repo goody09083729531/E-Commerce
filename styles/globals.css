@@ -425,6 +425,7 @@ header .logo{
   letter-spacing: 2px;
   text-transform: capitalize;
   padding: 15px 16px;
+  outline: none;
 }
 
 .containers .search input::placeholder{

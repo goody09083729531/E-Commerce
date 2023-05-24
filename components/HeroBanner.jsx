@@ -4,17 +4,23 @@ import { urlFor } from '../lib/client';
 import Image from 'next/image';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Autoplay } from 'swiper';
 import 'swiper/css';
 
 const HeroBanner = ({ heroBanner }) => {
+  SwiperCore.use([Autoplay])
+
   return (
     <section className="home">
       <div className="home-slider">
         <div className="wrapper">
           <Swiper
-            spaceBetween={50}
+            spaceBetween={70}
             slidesPerView={1}
-            onSlideChange={() => console.log('slide change')}
+            loop={true}
+            autoplay={{
+              delay: 2000,
+            }}
             onSwiper={(swiper) => console.log(swiper)}
           >
           <SwiperSlide>
