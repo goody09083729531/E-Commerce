@@ -197,6 +197,10 @@ header .icons #menu-bars{
   position: relative;
 }
 
+.no-results{
+  font-size: 20px;
+}
+
 .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -488,7 +492,7 @@ header .icons i:hover{
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 30px;
   width: 100%;
 }
@@ -1104,7 +1108,7 @@ margin-top: 160px;
   }
   .cart-container{
     width: 415px;
-  padding: 4px;
+    padding: 4px;
   }
   .cart-heading{
     margin-top: 35px;
@@ -1180,4 +1184,11 @@ margin-top: 160px;
   width: 300px;
   margin: auto;
 }
+}
+
+@media screen and (max-width:500px) {
+  .cart-container{
+    width: 330px;
+    padding: 2px;
+  }
 }

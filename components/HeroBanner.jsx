@@ -44,7 +44,7 @@ const HeroBanner = ({ heroBanner }) => {
                 <span>{heroBanner.smallText}</span>
                 <h3>{heroBanner.midText1}</h3>
                 <p>{heroBanner.desc1}</p>
-                <Link href={`/product/${heroBanner.product}`}>
+                <Link href={`/product/${heroBanner.product1}`}>
                   <button className="btn" type="button" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>{heroBanner.buttonText}</button>
                 </Link>
               </div>
@@ -60,7 +60,7 @@ const HeroBanner = ({ heroBanner }) => {
                 <span>{heroBanner.smallText}</span>
                 <h3>{heroBanner.midText2}</h3>
                 <p>{heroBanner.desc2}</p>
-                <Link href={`/product/${heroBanner.product}`}>
+                <Link href={`/product/${heroBanner.product2}`}>
                   <button className="btn" type="button" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>{heroBanner.buttonText}</button>
                 </Link>
               </div>
@@ -76,7 +76,7 @@ const HeroBanner = ({ heroBanner }) => {
                 <span>{heroBanner.smallText}</span>
                 <h3>{heroBanner.midText3}</h3>
                 <p>{heroBanner.desc3}</p>
-                <Link href={`/product/${heroBanner.product}`}>
+                <Link href={`/product/${heroBanner.product3}`}>
                   <button className="btn" type="button" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>{heroBanner.buttonText}</button>
                 </Link>
               </div>
