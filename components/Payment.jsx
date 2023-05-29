@@ -20,13 +20,13 @@ export default function Payment() {
   const config = {
     public_key: process.env.NEXT_PUBLIC_FLUTTERWAVE_PUBLIC_KEY,
     tx_ref: Date.now(),
-    amount: 10,
+    amount: totalPrice,
     currency: 'NGN',
     payment_options: 'card,mobilemoney,ussd',
     redirect_url: "https://e-commerce-goodness.vercel.app",
     customer: {
       email: email,
-      phone_number: phone,
+      phone_number: '',
       name: name,
     },
     customizations: {
