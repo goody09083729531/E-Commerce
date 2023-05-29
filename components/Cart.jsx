@@ -71,9 +71,11 @@ const Cart = () => {
               <h3>₦{totalPrice}</h3>
             </div>
             <div className="btn-container">
-              <button type="button" className="btns" onClick="">
-                Pay with Card
-              </button>
+              <Link href="/checkout">
+                <button type="button" className="btns" onClick={() => setShowCart(false)}>
+                  Make Payment
+                </button>
+              </Link>
             </div>
           </div>
         )}

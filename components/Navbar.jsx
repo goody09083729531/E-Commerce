@@ -33,7 +33,7 @@ const Navbar = () => {
       <a className="logo">Nsikak</a>
       <nav className="navbar" ref={myElementRef}>
         <Link href="/" className="active link">Home</Link>
-        <Link href="/product/shop" className="link">Shop</Link>
+        <Link href="/shop" className="link">Shop</Link>
         <Link href="/product/shop" className="link">About</Link>
         <Link href="/product/shop" className="link">Blog</Link>
         <Link href="" className="link">Contact</Link>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { client } from '../../lib/client';
-import { Market } from '../../components';
+import { client } from '../lib/client';
+import { Market } from '../components';
 
 const Shop = ({ shopData }) => {
   const [searchTerm, setSearchTerm] = useState('');
