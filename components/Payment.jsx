@@ -57,7 +57,7 @@ export default function Payment() {
             </div>
             <div className="inputBox">
               <span>Phone Number: </span>
-              <input type="number" placeholder="Enter your phone number here..." required onChange={handlePhoneChange} />
+              <input type="number" placeholder="Enter your phone number here..." onChange={handlePhoneChange} />
             </div>
             <div className="inputBox">
               <span>E-Mail: </span>
