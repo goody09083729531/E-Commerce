@@ -21,8 +21,8 @@ const Footer = () => {
               <li><a>Delivery Fees and Methods</a></li>
               <li><a>Payment Options</a></li>
               <li><a>Returns</a></li>
-              <li><p>E-Mail: wobogoodnessg@gmail.com</p></li>
-              <li><p>Phone No: +234-903-480-3655</p></li>
+              <li><p>E-Mail: ndiana@gmail.com</p></li>
+              <li><p>Phone No: +234-907-465-5568</p></li>
             </ul>
           </div>
           <div className="footer-col">

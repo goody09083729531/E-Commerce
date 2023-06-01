@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <a className="logo">Nsikak</a>
+      <a className="logo">Ndiana</a>
       <nav className="navbar" ref={myElementRef}>
         <Link href="/" className="active link">Home</Link>
         <Link href="/shop" className="link">Shop</Link>

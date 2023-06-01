@@ -1210,16 +1210,6 @@ margin-top: 160px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
 }
 
-/* .checkout-container form .checkout-row{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.checkout-container form .checkout-row .checkout-col{
-  flex: 1 1 250px;
-} */
-
 .checkout-container form .checkout-row .checkout-col .inputBox{
   margin: 15px 0;
 }
