@@ -19,7 +19,7 @@ export default function Payment() {
    const config = {
     public_key: process.env.NEXT_PUBLIC_FLUTTERWAVE_PUBLIC_KEY,
     tx_ref: Date.now(),
-    amount: 6,
+    amount: totalPrice,
     currency: 'NGN',
     payment_options: 'card,mobilemoney,ussd',
     customer: {
