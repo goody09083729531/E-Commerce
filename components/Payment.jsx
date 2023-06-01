@@ -36,7 +36,7 @@ export default function Payment() {
 
   const fwConfig = {
     ...config,
-    text: 'Pay with Flutterwave!',
+    text: 'Pay Now',
     callback: (response) => {
        console.log(response);
       closePaymentModal()
